@@ -1,0 +1,1 @@
+This is a tribut page to Alan Watts. This is my first completed Front End Development project. I spent about three months working on this page and in that time focused mainly on learning CSS and how to create the page with minimal framework use. 
