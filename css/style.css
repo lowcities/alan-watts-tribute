@@ -1,0 +1,394 @@
+/*********************MAIN CONTAINER STYLES*************************
+*******************************************************************/
+
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, #e8e2dc 75%, transparent), url("https://travisrunyard.com/wp-content/uploads/2014/07/zen-painting-56-fresh-hd-wallpaper.jpg")repeat center fixed;
+  background-size: cover;
+
+}
+
+header,
+.content1,
+.content2,
+.content3,
+.content4,
+footer {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.site-footer {
+  text-align: center;
+  color: aliceblue;
+  background-color: black;
+  margin-top: 20px;
+}
+
+
+/***********************SITE CONTENT STYLES*****************************
+***********************************************************************/
+
+.caption {
+  margin-top: -55%;
+  margin-bottom: 30%;
+
+}
+
+.caption h1,
+.caption h2 {
+  color: floralwhite;
+  text-align: center;
+  font-family: 'Unica One', cursive;
+  font-size: 4.5rem;
+}
+
+.content1,
+.p2 {
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  line-height: 1.7;
+}
+
+.p2 {
+  margin-top: 20px;
+}
+
+.content2 {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ margin-top: 5%;
+
+}
+
+.content3 {
+  display: inline-block;
+  margin: 50px 20px 30px 20px;
+  font-size: 2rem;
+}
+
+
+
+blockquote.quote {
+  color: darkslategrey;
+  background: linear-gradient( to bottom, #D7D4D4 1%, transparent);
+  width: 90%;
+  font-size: 2rem;
+  margin-top: 20px;
+  }
+
+blockquote.quote p {
+  text-align: center;
+}
+
+
+
+
+.bio {
+  display: block;
+  line-height: 2;
+
+}
+
+.content4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bib,
+.link,
+.vid-background {
+
+  background: linear-gradient( to bottom, #D7D4D4 1%, transparent);
+  padding: .5em;
+  margin-top: 30px;
+  width: 70%;
+}
+
+
+.bib {
+  line-height: 2;
+}
+
+.bib ul {
+  list-style: disc;
+  font-size: 1.2em
+}
+
+.vid {
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width: 97%;
+}
+
+.vid iframe,
+.vid object,
+.vid-embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vid-background h4 {
+  text-align: center;
+  line-height: 1.5;
+  padding: 4px;
+}
+
+.link h4 {
+  line-height: 1.5;
+}
+
+
+/******************MAIN IMAGE STYLES*********************************
+********************************************************************/
+
+.image1,
+.clear {
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.border {
+  border-bottom: 1px solid;
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 3px;
+}
+
+.image1 {
+  display: block;
+  background: linear-gradient(to left, transparent 10%, #e8e2dc), url("http://www.thinking-minds.net/wp-content/uploads/2016/07/alan-watts.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 60.25%;
+  width: 100%;
+  margin: 0;
+  z-index: -9;
+}
+
+.image2 {
+  background-image: url("https://pbs.twimg.com/profile_images/431104967299321856/z0auawQq.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 400px;
+  opacity: 0;
+  background-repeat: no-repeat;
+}
+
+.image3 {
+  display: inline-block;
+  background: radial-gradient(circle closest-side, transparent, #e8e2dc), url("http://www.prem-rawat-bio.org/gurus/img/drugs/awatts.jpg")center no-repeat;
+  width: 100%;
+  height: 266px;
+}
+
+.image4 {
+  display: inline-block;
+  background: radial-gradient(circle closest-side, transparent, #e8e2dc), url("http://www.alanwattspodcast.com/images/alanwatts_01_s.jpg")center no-repeat;
+
+  height: 300px;
+  width: 100%;
+}
+
+.snake {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background: url("https://s-media-cache-ak0.pinimg.com/originals/87/09/e4/8709e4773fc63dfb95df4bc05c3a2869.jpg")center no-repeat;
+  border-radius: 50%;
+  background-size: contain;
+}
+
+
+/***********************HOVER**************************************
+*******************************************************************/
+
+.snake {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.snake:hover {
+  border: 70px solid #000;
+  border-radius: 50%;
+}
+
+
+/***********************************************************************
+***********************MEDIA QUERIES***********************************/
+
+@media screen and (min-width: 42em) {
+  .caption {
+    margin-top: -35%;
+    margin-bottom: 20%;
+  }
+  .caption h1,
+  .caption h2 {
+    font-size: 60px;
+  }
+
+  .image3 {
+    width: 300px;
+    float: right;
+  }
+  .image4 {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+  }
+  .content1,
+  .p2 {
+    margin: 0 30px 0 15px;
+    padding: 0 40px 0 40px;
+  }
+
+  .content1{
+    border-left: 4px solid #a7a1a1;
+  }
+
+  .p2{
+    border-right: 4px solid #a7a1a1;
+  }
+
+
+
+
+
+
+  .bio {
+    font-size: 20px;
+    width: 100%;
+    padding: 0 50px 0 50px;
+  }
+
+  .content4{
+    margin-bottom: 100px;
+
+  }
+
+
+
+}
+
+
+/***End of Query***/
+
+@media screen and ( min-width: 55em ) {
+
+  .image2{
+    position: relative;
+    background-attachment: fixed;
+
+  }
+
+
+
+}
+
+@media screen and ( min-width: 60em) {
+  .content4 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+
+}
+
+  .bib,
+  .link,
+  .vid-background {
+    margin: 0 auto;
+    width: 31%;
+
+  }
+
+  .vid-background {
+
+  }
+}
+
+
+@media screen and ( min-width: 76em) {
+  .caption h1,
+  .caption h2 {
+    font-size: 75px;
+  }
+  .content1,
+  .p2 {
+    font-size: 2rem;
+    margin: 20px 100px 20px 100px;
+  }
+
+  .content2{
+    justify-content: space-around;
+  }
+
+  .image2 {
+
+    width: 50%;
+    background-size: contain;
+    background-position: 10%;
+   }
+
+  blockquote.quote {
+
+    width: 40%;
+    height: 80%;
+
+  }
+
+}
+
+
+/***End of Query***/
+
+@media only screen and ( min-width: 1440px) {
+  .caption h1,
+  .caption h2 {
+    font-size: 100px;
+  }
+  .border {
+    padding-top: 40px;
+  }
+
+}
+
+
+/****End of Query***/
+
+@media only screen and ( min-width: 2560px) {
+  .caption h1,
+  .caption h2 {
+    font-size: 6rem;
+  }
+  .caption h1 {
+    padding-bottom: -100px;
+  }
+  .caption h2 {
+    padding-top: 50px;
+  }
+
+  .image2 {
+    height: 500px;
+  }
+
+}
+
+
+/***End of Query***/
