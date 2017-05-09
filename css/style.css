@@ -9,12 +9,7 @@ body {
 
 }
 
-header,
-.content1,
-.content2,
-.content3,
-.content4,
-footer {
+* {
   font-family: 'Julius Sans One', sans-serif;
 }
 
@@ -32,7 +27,6 @@ footer {
 .caption {
   margin-top: -55%;
   margin-bottom: 30%;
-
 }
 
 .caption h1,
@@ -49,6 +43,7 @@ footer {
   display: block;
   font-size: 2rem;
   line-height: 1.7;
+  padding: 10px;
 }
 
 .p2 {
@@ -180,13 +175,13 @@ blockquote.quote p {
 }
 
 .image2 {
-  background-image: url("https://pbs.twimg.com/profile_images/431104967299321856/z0auawQq.jpeg");
-  background-size: cover;
-  background-position: center;
+  background: url("https://pbs.twimg.com/profile_images/431104967299321856/z0auawQq.jpeg") center no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
   width: 80%;
   height: 400px;
   opacity: 0;
-  background-repeat: no-repeat;
+
 }
 
 .image3 {
@@ -266,40 +261,26 @@ blockquote.quote p {
   .p2{
     border-right: 4px solid #a7a1a1;
   }
-
-
-
-
-
-
   .bio {
     font-size: 20px;
     width: 100%;
     padding: 0 50px 0 50px;
   }
-
   .content4{
     margin-bottom: 100px;
-
   }
-
-
-
 }
-
 
 /***End of Query***/
 
 @media screen and ( min-width: 55em ) {
 
+/*
   .image2{
     position: relative;
     background-attachment: fixed;
-
   }
-
-
-
+*/
 }
 
 @media screen and ( min-width: 60em) {
@@ -318,9 +299,7 @@ blockquote.quote p {
 
   }
 
-  .vid-background {
 
-  }
 }
 
 
@@ -341,14 +320,14 @@ blockquote.quote p {
 
   .image2 {
 
-    width: 50%;
+    width: 60%;
     background-size: contain;
     background-position: 10%;
    }
 
   blockquote.quote {
 
-    width: 40%;
+    width: 35%;
     height: 80%;
 
   }
